@@ -1,0 +1,31 @@
+{
+  "type": "module",
+  "name": "inventory-management-api",
+  "version": "1.0.0",
+  "description": "Backend Server code for inventory management system",
+  "main": "index.js",
+  "scripts": {
+    "server": "node index.js",
+    "test": "mocha",
+    "client": "npm run serve --prefix ../client",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Priydarshan Vijay",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "concurrently": "^7.0.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "joi": "^17.5.0",
+    "knex": "^0.95.15",
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "eslint": "^8.6.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "mocha": "^9.1.3"
+  }
+}
